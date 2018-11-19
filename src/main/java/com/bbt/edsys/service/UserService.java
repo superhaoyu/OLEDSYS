@@ -12,10 +12,14 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     @Autowired
-    protected UserMapper userMapper;
+    public UserMapper userMapper;
 
     public List<User> getUsers() {
         return userMapper.selectUsers();
     }
+
+//    public User getSpecificUser(String id) {
+//        return userMapper.selectSpecificUser();
+//    }
 
 }
